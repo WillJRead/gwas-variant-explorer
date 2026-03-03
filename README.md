@@ -5,6 +5,7 @@ This is a personal project where I explored **genome-wide association study (GWA
 ---
 
 ## **Project Structure**
+```
 Prostate_Cancer_GWAS_Summary/
 │
 ├── data/ <-- download your own data to this folder
@@ -19,7 +20,7 @@ Prostate_Cancer_GWAS_Summary/
 │ └── manhattan_plot.py # Generate Manhattan plot
 │
 └── README.md
-
+```
 --- 
 
 ## **Usage**
@@ -46,6 +47,7 @@ top_snps("your.file.name.tsv")
 
 # Or extract a custom number of SNPs
 top_snps("your.file.name.tsv", n_snps=20)
+```
 
 This will generate top_snps.csv in the results/ folder. Replace "your.file.name.tsv" with your own .tsv file name. 
 
