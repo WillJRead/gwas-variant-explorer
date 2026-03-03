@@ -51,7 +51,6 @@ top_snps("your.file.name.tsv", n_snps=20)
 
 This will generate top_snps.csv in the results/ folder. Replace "your.file.name.tsv" with your own .tsv file name. 
 
-```
 4. **Manhattan Plot**
 
 ```
@@ -59,6 +58,7 @@ from scripts.manhattan_plot import make_manhattan
 
 make_manhattan("your.file.name.tsv")
 ```
+
 This will create manhattan_plot.png in the results/ folder.
 
 
