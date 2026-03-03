@@ -3,7 +3,7 @@ def top_snps(file_name, n_snps=None):
     from pathlib import Path
     import pandas as pd
 
-    #ensuring pathing is correct for user
+    #ensuring pathing is correct
     script_dir = Path(__file__).resolve().parent
     file_path = script_dir.parent / "data" / file_name
     results_dir = script_dir.parent / "results"
@@ -24,7 +24,7 @@ def top_snps(file_name, n_snps=None):
     top_hits.to_csv(save_path, index=False)
     print(f"Top {n_snps} SNPs saved to: {save_path}")
     
-#call the function
-top_hits = top_snps("gwas_subset_prostate_cancer.tsv", n_snps=15)
-print(top_hits)
+#example usage:
+#top_hits = top_snps("gwas_subset_prostate_cancer.tsv", n_snps=15)
+#print(top_hits)
 
